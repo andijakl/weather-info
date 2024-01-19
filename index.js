@@ -1,3 +1,7 @@
+// Sample application to demonstrate async/await
+// with a simple HTTP request
+// based on the OpenWeather API
+
 async function getWeather(lat, lon) {
     // https://openweathermap.org/current
     const apiKey = ''; // Replace with your OpenWeather API key
@@ -15,5 +19,4 @@ async function getWeather(lat, lon) {
 console.log("before request");
 const data = await getWeather(48.2082, 16.3719);
 console.log(data);
-
 console.log("after request");
